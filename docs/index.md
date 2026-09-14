@@ -11,79 +11,29 @@ flow-matching model (CLFM) and by its waveform-domain counterpart (W-CFM).
 <div class="note">
 Use headphones and keep the playback level moderate. The files below are
 peak-normalized only for listening; the quantitative results in the paper are
-computed from the original-scale signals. These examples provide a qualitative
+computed from the original-scale signals. Within each example, the STFT panels
+share the same dB reference and color range. These examples provide a qualitative
 comparison and do not constitute a formal listening test.
 </div>
 
-## Example 1
+{% for example in site.data.examples %}
+## Example {{ example.number }}
 
 <table class="demo-table">
   <thead><tr><th>Conditioning</th><th>Ground truth</th><th>CLFM</th><th>W-CFM</th></tr></thead>
   <tbody><tr>
-    <td class="parameters"><i>&mu;</i> = 23.07<br><i>D</i>/<i>&mu;</i> = 12.58<br><i>T</i><sub>0</sub>/<i>&mu;</i> = 1.449<br><i>L</i><sub>y</sub> = 2.331 m<br><i>x</i><sub>o</sub> = 0.908<br><i>y</i><sub>o</sub> = 0.738</td>
-    <td><audio controls preload="none"><source src="examples/example_01/ground_truth.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_01/clfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_01/w_cfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-  </tr><tr><td colspan="4"><img src="examples/example_01/edc.png" alt="Energy decay curves for Example 1"></td></tr></tbody>
+    <td class="parameters"><i>&mu;</i> = {{ example.mu }}<br><i>D</i>/<i>&mu;</i> = {{ example.D_mu }}<br><i>T</i><sub>0</sub>/<i>&mu;</i> = {{ example.T0_mu }}<br><i>L</i><sub>y</sub> = {{ example.Ly }} m<br><i>x</i><sub>o</sub> = {{ example.op_x }}<br><i>y</i><sub>o</sub> = {{ example.op_y }}</td>
+    <td><audio controls preload="none"><source src="examples/{{ example.name }}/ground_truth.wav" type="audio/wav">Audio playback is not supported.</audio><div class="t60"><i>T</i><sub>60</sub> = {{ example.t60_gt }} s</div></td>
+    <td><audio controls preload="none"><source src="examples/{{ example.name }}/clfm.wav" type="audio/wav">Audio playback is not supported.</audio><div class="t60"><i>T</i><sub>60</sub> = {{ example.t60_clfm }} s</div></td>
+    <td><audio controls preload="none"><source src="examples/{{ example.name }}/w_cfm.wav" type="audio/wav">Audio playback is not supported.</audio><div class="t60"><i>T</i><sub>60</sub> = {{ example.t60_w_cfm }} s</div></td>
+  </tr></tbody>
 </table>
 
-## Example 2
-
-<table class="demo-table">
-  <thead><tr><th>Conditioning</th><th>Ground truth</th><th>CLFM</th><th>W-CFM</th></tr></thead>
-  <tbody><tr>
-    <td class="parameters"><i>&mu;</i> = 12.91<br><i>D</i>/<i>&mu;</i> = 0.753<br><i>T</i><sub>0</sub>/<i>&mu;</i> = 0.00648<br><i>L</i><sub>y</sub> = 2.951 m<br><i>x</i><sub>o</sub> = 0.513<br><i>y</i><sub>o</sub> = 0.998</td>
-    <td><audio controls preload="none"><source src="examples/example_02/ground_truth.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_02/clfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_02/w_cfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-  </tr><tr><td colspan="4"><img src="examples/example_02/edc.png" alt="Energy decay curves for Example 2"></td></tr></tbody>
-</table>
-
-## Example 3
-
-<table class="demo-table">
-  <thead><tr><th>Conditioning</th><th>Ground truth</th><th>CLFM</th><th>W-CFM</th></tr></thead>
-  <tbody><tr>
-    <td class="parameters"><i>&mu;</i> = 3.047<br><i>D</i>/<i>&mu;</i> = 4.206<br><i>T</i><sub>0</sub>/<i>&mu;</i> = 84.04<br><i>L</i><sub>y</sub> = 2.808 m<br><i>x</i><sub>o</sub> = 0.520<br><i>y</i><sub>o</sub> = 0.590</td>
-    <td><audio controls preload="none"><source src="examples/example_03/ground_truth.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_03/clfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_03/w_cfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-  </tr><tr><td colspan="4"><img src="examples/example_03/edc.png" alt="Energy decay curves for Example 3"></td></tr></tbody>
-</table>
-
-## Example 4
-
-<table class="demo-table">
-  <thead><tr><th>Conditioning</th><th>Ground truth</th><th>CLFM</th><th>W-CFM</th></tr></thead>
-  <tbody><tr>
-    <td class="parameters"><i>&mu;</i> = 90.21<br><i>D</i>/<i>&mu;</i> = 21.06<br><i>T</i><sub>0</sub>/<i>&mu;</i> = 0.000552<br><i>L</i><sub>y</sub> = 1.262 m<br><i>x</i><sub>o</sub> = 0.543<br><i>y</i><sub>o</sub> = 0.816</td>
-    <td><audio controls preload="none"><source src="examples/example_04/ground_truth.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_04/clfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_04/w_cfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-  </tr><tr><td colspan="4"><img src="examples/example_04/edc.png" alt="Energy decay curves for Example 4"></td></tr></tbody>
-</table>
-
-## Example 5
-
-<table class="demo-table">
-  <thead><tr><th>Conditioning</th><th>Ground truth</th><th>CLFM</th><th>W-CFM</th></tr></thead>
-  <tbody><tr>
-    <td class="parameters"><i>&mu;</i> = 12.77<br><i>D</i>/<i>&mu;</i> = 184.2<br><i>T</i><sub>0</sub>/<i>&mu;</i> = 0.000960<br><i>L</i><sub>y</sub> = 3.865 m<br><i>x</i><sub>o</sub> = 0.658<br><i>y</i><sub>o</sub> = 0.941</td>
-    <td><audio controls preload="none"><source src="examples/example_05/ground_truth.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_05/clfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_05/w_cfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-  </tr><tr><td colspan="4"><img src="examples/example_05/edc.png" alt="Energy decay curves for Example 5"></td></tr></tbody>
-</table>
-
-## Example 6
-
-<table class="demo-table">
-  <thead><tr><th>Conditioning</th><th>Ground truth</th><th>CLFM</th><th>W-CFM</th></tr></thead>
-  <tbody><tr>
-    <td class="parameters"><i>&mu;</i> = 46.80<br><i>D</i>/<i>&mu;</i> = 3.667<br><i>T</i><sub>0</sub>/<i>&mu;</i> = 0.000970<br><i>L</i><sub>y</sub> = 3.308 m<br><i>x</i><sub>o</sub> = 0.629<br><i>y</i><sub>o</sub> = 0.554</td>
-    <td><audio controls preload="none"><source src="examples/example_06/ground_truth.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_06/clfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-    <td><audio controls preload="none"><source src="examples/example_06/w_cfm.wav" type="audio/wav">Audio playback is not supported.</audio></td>
-  </tr><tr><td colspan="4"><img src="examples/example_06/edc.png" alt="Energy decay curves for Example 6"></td></tr></tbody>
-</table>
-
+<div class="diagnostic-grid">
+  <figure><img src="examples/{{ example.name }}/stft_gt.png" alt="Ground-truth STFT for Example {{ example.number }}"></figure>
+  <figure><img src="examples/{{ example.name }}/stft_clfm.png" alt="CLFM STFT for Example {{ example.number }}"></figure>
+  <figure><img src="examples/{{ example.name }}/stft_w_cfm.png" alt="W-CFM STFT for Example {{ example.number }}"></figure>
+  <figure><img src="examples/{{ example.name }}/waveform_gt_clfm.png" alt="GT and CLFM waveforms for Example {{ example.number }}"></figure>
+  <figure><img src="examples/{{ example.name }}/waveform_gt_w_cfm.png" alt="GT and W-CFM waveforms for Example {{ example.number }}"></figure>
+</div>
+{% endfor %}

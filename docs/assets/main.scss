@@ -38,6 +38,33 @@
   margin-top: 0.5rem;
 }
 
+.t60 {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.diagnostic-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.35rem;
+  width: calc(100vw - 2rem);
+  max-width: 1500px;
+  margin: 0 0 2.5rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.diagnostic-grid figure {
+  margin: 0;
+}
+
+.diagnostic-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .note {
   padding: 0.8rem 1rem;
   border-left: 4px solid #2a7ae2;
@@ -45,6 +72,13 @@
 }
 
 @media (max-width: 760px) {
+  .diagnostic-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    left: auto;
+    transform: none;
+  }
+
   .demo-table,
   .demo-table tbody,
   .demo-table tr,
@@ -68,4 +102,3 @@
   .demo-table td:nth-child(3)::before { content: "CLFM"; }
   .demo-table td:nth-child(4)::before { content: "W-CFM"; }
 }
-
