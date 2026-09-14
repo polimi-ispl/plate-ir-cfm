@@ -1,0 +1,71 @@
+---
+---
+
+@import "minima";
+
+.wrapper {
+  max-width: 1100px;
+}
+
+.demo-table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 1rem 0 2.2rem;
+}
+
+.demo-table th,
+.demo-table td {
+  padding: 0.65rem;
+  text-align: center;
+  vertical-align: top;
+}
+
+.demo-table .parameters {
+  width: 26%;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.demo-table audio {
+  width: 100%;
+  min-width: 150px;
+}
+
+.demo-table img {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.note {
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #2a7ae2;
+  background: #f5f7fa;
+}
+
+@media (max-width: 760px) {
+  .demo-table,
+  .demo-table tbody,
+  .demo-table tr,
+  .demo-table th,
+  .demo-table td {
+    display: block;
+    width: auto;
+  }
+
+  .demo-table thead {
+    display: none;
+  }
+
+  .demo-table td::before {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+
+  .demo-table td:nth-child(2)::before { content: "Ground truth"; }
+  .demo-table td:nth-child(3)::before { content: "CLFM"; }
+  .demo-table td:nth-child(4)::before { content: "W-CFM"; }
+}
+
