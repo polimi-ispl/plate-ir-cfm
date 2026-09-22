@@ -1,0 +1,149 @@
+[
+  {
+    "number": 1,
+    "name": "condition_01",
+    "sample_index": 174,
+    "mu": "12.25",
+    "D_mu": "120.5",
+    "T0_mu": "0.01668",
+    "Ly": "3.701",
+    "op_x": "0.8568",
+    "op_y": "0.6739",
+    "t60_gt": "5.85",
+    "generations": [
+      {
+        "seed": 0,
+        "clfm_file": "clfm_seed_0000.wav",
+        "w_cfm_file": "w_cfm_seed_0000.wav",
+        "t60_clfm": "6.25",
+        "t60_w_cfm": "6.21"
+      },
+      {
+        "seed": 1,
+        "clfm_file": "clfm_seed_0001.wav",
+        "w_cfm_file": "w_cfm_seed_0001.wav",
+        "t60_clfm": "6.62",
+        "t60_w_cfm": "6.07"
+      },
+      {
+        "seed": 2,
+        "clfm_file": "clfm_seed_0002.wav",
+        "w_cfm_file": "w_cfm_seed_0002.wav",
+        "t60_clfm": "5.96",
+        "t60_w_cfm": "6.09"
+      },
+      {
+        "seed": 3,
+        "clfm_file": "clfm_seed_0003.wav",
+        "w_cfm_file": "w_cfm_seed_0003.wav",
+        "t60_clfm": "5.69",
+        "t60_w_cfm": "6.20"
+      },
+      {
+        "seed": 4,
+        "clfm_file": "clfm_seed_0004.wav",
+        "w_cfm_file": "w_cfm_seed_0004.wav",
+        "t60_clfm": "5.94",
+        "t60_w_cfm": "6.20"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "name": "condition_02",
+    "sample_index": 2906,
+    "mu": "86.05",
+    "D_mu": "9.822",
+    "T0_mu": "0.0001501",
+    "Ly": "1.401",
+    "op_x": "0.9581",
+    "op_y": "0.5558",
+    "t60_gt": "5.87",
+    "generations": [
+      {
+        "seed": 0,
+        "clfm_file": "clfm_seed_0000.wav",
+        "w_cfm_file": "w_cfm_seed_0000.wav",
+        "t60_clfm": "5.80",
+        "t60_w_cfm": "6.27"
+      },
+      {
+        "seed": 1,
+        "clfm_file": "clfm_seed_0001.wav",
+        "w_cfm_file": "w_cfm_seed_0001.wav",
+        "t60_clfm": "5.78",
+        "t60_w_cfm": "6.09"
+      },
+      {
+        "seed": 2,
+        "clfm_file": "clfm_seed_0002.wav",
+        "w_cfm_file": "w_cfm_seed_0002.wav",
+        "t60_clfm": "5.70",
+        "t60_w_cfm": "6.28"
+      },
+      {
+        "seed": 3,
+        "clfm_file": "clfm_seed_0003.wav",
+        "w_cfm_file": "w_cfm_seed_0003.wav",
+        "t60_clfm": "6.06",
+        "t60_w_cfm": "5.80"
+      },
+      {
+        "seed": 4,
+        "clfm_file": "clfm_seed_0004.wav",
+        "w_cfm_file": "w_cfm_seed_0004.wav",
+        "t60_clfm": "6.16",
+        "t60_w_cfm": "6.69"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "name": "condition_03",
+    "sample_index": 8477,
+    "mu": "19.27",
+    "D_mu": "9.004",
+    "T0_mu": "2.43",
+    "Ly": "1.208",
+    "op_x": "0.8343",
+    "op_y": "0.5296",
+    "t60_gt": "5.98",
+    "generations": [
+      {
+        "seed": 0,
+        "clfm_file": "clfm_seed_0000.wav",
+        "w_cfm_file": "w_cfm_seed_0000.wav",
+        "t60_clfm": "6.01",
+        "t60_w_cfm": "6.38"
+      },
+      {
+        "seed": 1,
+        "clfm_file": "clfm_seed_0001.wav",
+        "w_cfm_file": "w_cfm_seed_0001.wav",
+        "t60_clfm": "5.85",
+        "t60_w_cfm": "6.23"
+      },
+      {
+        "seed": 2,
+        "clfm_file": "clfm_seed_0002.wav",
+        "w_cfm_file": "w_cfm_seed_0002.wav",
+        "t60_clfm": "6.38",
+        "t60_w_cfm": "5.75"
+      },
+      {
+        "seed": 3,
+        "clfm_file": "clfm_seed_0003.wav",
+        "w_cfm_file": "w_cfm_seed_0003.wav",
+        "t60_clfm": "6.12",
+        "t60_w_cfm": "6.08"
+      },
+      {
+        "seed": 4,
+        "clfm_file": "clfm_seed_0004.wav",
+        "w_cfm_file": "w_cfm_seed_0004.wav",
+        "t60_clfm": "5.56",
+        "t60_w_cfm": "5.84"
+      }
+    ]
+  }
+]

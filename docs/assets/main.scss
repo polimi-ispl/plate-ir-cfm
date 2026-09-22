@@ -71,6 +71,52 @@
   background: #f5f7fa;
 }
 
+.stochastic-condition-summary {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(260px, 2fr);
+  gap: 1rem;
+  align-items: start;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  background: #f8f8f8;
+  border: 1px solid #e5e5e5;
+}
+
+.stochastic-condition-summary .parameters {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.stochastic-condition-summary .reference-audio {
+  text-align: center;
+}
+
+.stochastic-condition-summary audio,
+.stochastic-table audio {
+  display: block;
+  width: 100%;
+  min-width: 180px;
+  margin-top: 0.35rem;
+}
+
+.stochastic-table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0 0 2.5rem;
+}
+
+.stochastic-table th,
+.stochastic-table td {
+  padding: 0.55rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.stochastic-table th:first-child,
+.stochastic-table td:first-child {
+  width: 8%;
+}
+
 @media (max-width: 760px) {
   .diagnostic-grid {
     grid-template-columns: 1fr;
@@ -101,4 +147,42 @@
   .demo-table td:nth-child(2)::before { content: "Ground truth"; }
   .demo-table td:nth-child(3)::before { content: "CLFM"; }
   .demo-table td:nth-child(4)::before { content: "W-CFM"; }
+
+  .stochastic-condition-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .stochastic-table,
+  .stochastic-table tbody,
+  .stochastic-table tr,
+  .stochastic-table th,
+  .stochastic-table td {
+    display: block;
+    width: auto;
+  }
+
+  .stochastic-table thead {
+    display: none;
+  }
+
+  .stochastic-table tr {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .stochastic-table td:first-child {
+    width: auto;
+    font-weight: 600;
+  }
+
+  .stochastic-table td:first-child::before { content: "Seed "; }
+  .stochastic-table td:nth-child(2)::before { content: "CLFM"; }
+  .stochastic-table td:nth-child(3)::before { content: "W-CFM"; }
+
+  .stochastic-table td:nth-child(2)::before,
+  .stochastic-table td:nth-child(3)::before {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
 }
