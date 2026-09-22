@@ -5,9 +5,7 @@ title: Listening examples
 
 <div class="note">
 Use headphones and keep the playback level moderate. The files below are
-peak-normalized only for listening. Each STFT is normalized to its own
-peak, while all panels use the same dB range. These examples provide a
-qualitative comparison between generated impulse responses.
+peak-normalized only for listening. Each STFT is peak normalized. These examples provide a qualitative comparison between generated impulse responses.
 </div>
 
 {% for example in site.data.examples %}
@@ -39,9 +37,7 @@ qualitative comparison between generated impulse responses.
 
 <div class="note">
 For each conditioning vector, CLFM and W-CFM are sampled repeatedly from
-different Gaussian initializations. The physical target is fixed; therefore,
-these examples illustrate seed-to-seed generative variability rather than
-variability in the underlying plate parameters. A common gain is applied to
+different Gaussian initializations. A common gain is applied to
 the ground truth and all generations belonging to the same condition.
 </div>
 
